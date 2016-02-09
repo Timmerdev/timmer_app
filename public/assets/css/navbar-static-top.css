@@ -1,0 +1,48 @@
+body {
+	
+    background-color: #eee;
+    background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	max-height: 100%;
+	max-width:100%;
+    font-family: Ubuntu, sans-serif;
+}
+
+.navbar-static-top {
+    margin-bottom: 19px;
+}
+
+.week-grid{
+  overflow-y: scroll;
+  width: 100%;
+  height: 510px;
+}
+
+.hour-mark{
+	text-align:right;
+	font-size:10px;
+}
+.hour-mark-cell{
+	height: 30px;
+	border-bottom: 1px solid #ddd;
+}
+.top-grid,
+.days-list
+{
+	text-align: center;
+
+}
+
+.week-grid-icon{
+	width:10px;
+	height:10px;
+	padding: 0;
+	background:none;
+	border:none,
+
+}
+
+
+

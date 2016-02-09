@@ -1,0 +1,48 @@
+
+
+
+<!-- start of accordion -->
+<div class="row top-grid">
+<div class="col-md-1"><b>Time</b></div>
+<div class="col-md-13">
+<table class="table-responsive" style="width:90%;margin-top:-5px">
+<thead>
+<th class="days-list"><?php echo $dayBefore3['currentDayName']; ?> <?php echo $dayBefore3['currentMonth']; ?>/<?php echo $dayBefore3['currentDay']; ?></th>
+<th class="days-list"><?php echo $dayBefore2['currentDayName']; ?> <?php echo $dayBefore2['currentMonth']; ?>/<?php echo $dayBefore2['currentDay']; ?></th>
+<th class="days-list"><?php echo $dayBefore['currentDayName']; ?> <?php echo $dayBefore['currentMonth']; ?>/<?php echo $dayBefore['currentDay']; ?></th>
+<th class="days-list"><?php echo $targetDay['currentDayName']; ?> <?php echo $targetDay['currentMonth']; ?>/<?php echo $targetDay['currentDay']; ?></th>
+<th class="days-list"><?php echo $dayAfter['currentDayName']; ?> <?php echo $dayAfter['currentMonth']; ?>/<?php echo $dayAfter['currentDay']; ?></th>
+<th class="days-list"><?php echo $dayAfter2['currentDayName']; ?> <?php echo $dayAfter2['currentMonth']; ?>/<?php echo $dayAfter2['currentDay']; ?></th>
+<th class="days-list"><?php echo $dayAfter3['currentDayName']; ?> <?php echo $dayAfter3['currentMonth']; ?>/<?php echo $dayAfter3['currentDay']; ?>
+
+<th class="days-list"><button href="#findMonth" data-toggle="modal" data-target="#myModal" class="week-grid-button" style="border:none;color:#EEEEEE;background-color:#EEEEEE"><img src="<?php echo e(asset('images/add.png')); ?>" class= 'side-icon' alt="Add New Log" /></button> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#editList" data-url="/getEditList"><img src="<?php echo e(asset('images/edit.png')); ?>" class='side-icon' alt="Edit Today's List" /></a> </th>
+<th>
+</thead>
+</table>
+</div>
+</div>
+<div class="row week-grid">
+<div class="col-md-1">
+
+<table class="table hour-mark">
+<tr><td class="hour-mark-cell">12 AM</td></tr>
+<tr><td class="hour-mark-cell"</td></tr>
+<?php for($i=1; $i < 12; $i++): ?>
+<tr><td class="hour-mark-cell"><?php echo e($i); ?> AM</td></tr>
+<tr><td class="hour-mark-cell"</td></tr>
+<?php endfor; ?>
+<tr><td class="hour-mark-cell">12 PM</td></tr>
+<tr><td class="hour-mark-cell"</td></tr>
+<?php for($i=1; $i < 12; $i++): ?>
+<tr><td class="hour-mark-cell"><?php echo e($i); ?> PM</td></tr>
+<tr><td class="hour-mark-cell"</td></tr>
+<?php endfor; ?>
+
+</table>
+</div>
+<div class="col-md-11">
+
+</div>
+</div>
+
+  

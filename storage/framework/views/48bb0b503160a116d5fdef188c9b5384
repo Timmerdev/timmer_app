@@ -1,0 +1,5 @@
+<div class="calendar-holder">
+<h2 align="center"><?php echo $monthName; ?> <?php echo $year; ?></h2>
+<?php echo $calendar; ?>
+
+</div>

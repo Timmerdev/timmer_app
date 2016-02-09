@@ -1,0 +1,44 @@
+List of Requirements for IT Project:
+*-done
+!-in progress
+#-Pending
+
+
+Prototype:
+Web interface (Either J2EE or Laravel-Framework Based) [in progress]
+Mobile Interface (Evan's work)
+Online Server (TBD)
+
+
+Specific Functions:
+	-Basic Functions
+		+CRUD
+		+AI Listing of Task/Logs (algorithm)
+		+Account Syncs (Facebook and Google)
+		+Other functions that is included in the Must-haves
+
+	-Algorithm (to be tackled later on)
+
+	-Server Side Works (Data uploads)
+		+Data Saves/Archiving
+		+Manipulation of Data (User Provision, Facebook Data, Google Data)
+		+Web Hosting Sites
+	-Advertisement Spaces
+
+Details:
+
+Log-in and Registration (Manual) *
+Login and Registration (Social Media) *
+Simple Database ! (needs to be updated to match specification of the project)
+UI for the landing after Login Success *
+AJAX implementation (Dynamic Pages)! - Changed to normal implementation of pages (already using jquery; a bit dynamic/eye candy movements for users)
+
+CRUD for Logs #
+CRUD for List #
+Deployment of Web App online (needs web hosting; Candidates for web hosts: Forge, x10hosting, fortrabbit, bluemix)
+Access to Google Calendar # (different API; will try to use Socialite; need integration of google calendar)
+Access to Facebook Events # - (App needs to be live and also have a privacy policy URL + Terms and Condi)
+Making Manual (static/post pages) Planner#
+Making the Algorithm#
+Making the User Settings#
+Layout for Web !

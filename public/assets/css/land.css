@@ -1,0 +1,47 @@
+.side-button{
+	margin-bottom: 5px;
+}
+
+.side-icon{
+	width:20px;
+	height:20px;
+    padding: 0;
+    background:none;
+    border:0px
+}
+
+.inverted {
+    background: url(next.png) no-repeat;
+    width:20px; height:20px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    }
+.list-nav{
+    text-align: center;
+}
+
+.row{
+    margin-bottom: 10px;
+}
+
+.list-nav-text,
+.list-nav-text:visited,
+.list-nav-text:hover,
+.list-nav-text:active
+{
+    color:#333333;
+    font-weight:bold;
+    text-decoration: none;
+    outline: 0;
+}
+
+.clsDatePicker {
+    z-index: 100000;
+}
+
+.find{
+    background-color: #EEEEEE;
+}

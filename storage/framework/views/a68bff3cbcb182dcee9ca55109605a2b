@@ -1,0 +1,27 @@
+<?php $__env->startSection('tab'); ?>
+<div class="btn-group btn-group-justified">
+<!-- start of top row for buttons-->
+<div class="btn-group" role="group"><a href="<?php echo e(url('dayBefore/'.$dayBefore)); ?>" class="btn btn-lg side-button"><img src="<?php echo e(asset('images/next.png')); ?>" class='side-icon inverted' alt="Move to next Day" /></a></div>
+
+<div class="btn-group" role="group"><a href="#listToday"class="btn btn-lg side-button"><img src="<?php echo e(asset('images/home.png')); ?>" class='side-icon' alt="Back to Current List" /></a></div>
+
+<!-- <div class="btn-group" role="group"><a href="#addNewLog" data-url="/getAddNewLog" aria-controls="addNewLog" role="tab" data-toggle="tab" class="btn btn-lg side-button"><img src="<?php echo e(asset('images/add.png')); ?>" class= 'side-icon' alt="Add New Log" /></a></li>
+
+<li role="presentation"><a href="#myModal" data-toggle="modal" class="btn btn-lg side-button"><img src="<?php echo e(asset('images/minus.png')); ?>" class='side-icon' alt="Delete List" /></a></li> -->
+
+<div class="btn-group" role="group"><a href="<?php echo e(url('dayAfter/'.$dayAfter)); ?>" class="btn btn-lg side-button"><img src="<?php echo e(asset('images/next.png')); ?>" class='side-icon' alt="Move to next Day" /></a></div>
+ <!-- end of top row buttons -->
+</div>
+
+<?php echo $__env->make('includes.form_modal', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<div class="layout-content-month" style="margin-top:15px">
+    <?php echo $__env->make('day-layout.day', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  </div>
+
+  </div>
+
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('pages.land', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

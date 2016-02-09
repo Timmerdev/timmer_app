@@ -1,0 +1,19 @@
+<?php $__env->startSection('tab'); ?>
+<div class="btn-group btn-group-justified" style = "width:95%">
+<div class="btn-group" role="group"><a href="<?php echo e(url('weekBefore/'.$weekYearBefore.'/'.$weekMonthBefore.'/'.$weekDayBefore)); ?>" class="btn btn-lg side-button"><img src="<?php echo e(asset('images/next.png')); ?>" class='side-icon inverted' alt="Move to next Day" /></a></div>
+<div class="btn-group" role="group">
+<a href="<?php echo e(url('week')); ?>" class="btn btn-lg side-button"><img src="<?php echo e(asset('images/home.png')); ?>" class='side-icon' alt="Back to Current Week" /></a></ul>
+</div>
+<div class="btn-group" role="group"><a href="<?php echo e(url('weekAfter/'.$weekYearAfter.'/'.$weekMonthAfter.'/'.$weekDayAfter)); ?>" class="btn btn-lg side-button"><img src="<?php echo e(asset('images/next.png')); ?>" class='side-icon' alt="Move to next Week" /></a></div>
+</div>
+<?php echo $__env->make('includes.addList', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<div class="layout-content-month" style="margin-top:15px">
+ <?php echo $__env->make('week-layout.week', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  </div>
+
+
+
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('pages.land', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

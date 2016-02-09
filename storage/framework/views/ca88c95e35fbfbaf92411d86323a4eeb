@@ -1,0 +1,23 @@
+<?php $__env->startSection('tab'); ?>
+<div class="btn-group btn-group-justified">
+<!-- start of top row for buttons-->
+<div class="btn-group" role="group"><a href="<?php echo e(url('beforeMonth/'.$monthBefore.'/'.$beforeYear)); ?>" class="btn btn-lg side-button"><img src="<?php echo e(asset('images/next.png')); ?>" class='side-icon inverted' alt="Move to next Day" /></a></div>
+
+ <div class="btn-group" role="group"><a href="<?php echo e(url('thisMonth')); ?>" data-url="/getToday"class="btn btn-lg side-button"><img src="<?php echo e(asset('images/home.png')); ?>" class='side-icon' alt="Back to Current List" /></a></div>
+
+ <div class="btn-group" role="group"><button href="#findMonth" data-toggle="modal" data-target="#myModal" class="btn btn-lg side-button find"><img src="<?php echo e(asset('images/find.png')); ?>" class='side-icon' alt="Find Date" /></button></div>
+
+<div class="btn-group" role="group"><a href="<?php echo e(url('nextMonth/'.$monthAfter.'/'.$afterYear)); ?> " class="btn btn-lg side-button"><img src="<?php echo e(asset('images/next.png')); ?>" class='side-icon' alt="Move to next Day" /></a></div>
+ <!-- end of top row buttons -->
+</div>
+
+	<?php echo $__env->make('includes.searchDate', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<div class="layout-content-month" style="margin-top:15px">
+   <?php echo $__env->make('month-layout.month', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  </div>
+
+
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('pages.land', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
